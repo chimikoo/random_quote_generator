@@ -37,10 +37,19 @@ function getRandomQuote() {
 }
 
 // Display the random quote
-const randomQuote = getRandomQuote();
+function displayRandomQuote() {
+  const randomQuote = getRandomQuote();
 
-const quoteContainer = document.querySelector("#quote-container");
-quoteContainer.innerHTML = `
-  <p class="quote">${randomQuote.quote}</p>
-  <p class="author">- ${randomQuote.author}</p>
-`;
+  const quoteContainer = document.querySelector("#quote-container");
+  quoteContainer.innerHTML = `
+    <p class="quote">${randomQuote.quote}</p>
+    <p class="author">- ${randomQuote.author}</p>
+  `;
+}
+
+// Button click event handler
+const btnRandomQuote = document.querySelector("#btn-random-quote");
+btnRandomQuote.addEventListener("click", displayRandomQuote);
+
+// Initial display of a random quote
+displayRandomQuote();

@@ -8,13 +8,11 @@ const quotes = [
     author: "Steve Jobs",
   },
   {
-    quote:
-      "The future belongs to those who believe in the beauty of their dreams.",
+    quote: "The future belongs to those who believe in the beauty of their dreams.",
     author: "Eleanor Roosevelt",
   },
   {
-    quote:
-      "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.",
     author: "Winston Churchill",
   },
   {
@@ -22,7 +20,7 @@ const quotes = [
     author: "Sam Levenson",
   },
   {
-    quote: "Don't eat yellow snow. I promise you it's not pinaple flavour.",
+    quote: "Don't eat yellow snow. I promise you it's not pineapple flavor.",
     author: "Pelle",
   },
   {
@@ -37,12 +35,9 @@ function getRandomQuote() {
 }
 
 const randomQuote = getRandomQuote();
-console.log(randomQuote.quote);
-console.log(randomQuote.author);
 
 const quoteContainer = document.querySelector("#quote-container");
-const quote = {};
 quoteContainer.innerHTML = `
-      <p class="quote">${randomQuote.quote}</p>
-      <p class="author">- ${randomQuote.author}</p>
-    `;
+  <p class="quote">${randomQuote.quote}</p>
+  <p class="author">- ${randomQuote.author}</p>
+`;

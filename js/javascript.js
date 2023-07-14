@@ -1,8 +1,8 @@
 // Array of quotes
 const quotes = [
   {
-    quote: "The only way to do great work is to love what you do.",
-    author: "Steve Jobs",
+    quote: "Appear weak when you are strong, and strong when you are weak.",
+    author: "Sun Tzu",
   },
   {
     quote: "Innovation distinguishes between a leader and a follower.",
@@ -25,8 +25,16 @@ const quotes = [
     author: "Pelle",
   },
   {
-    quote: "Don't jump off an airplane. It's bad for you.",
+    quote: "Walking on your hands is not always efficant.",
     author: "Pelle",
+  },
+  {
+    quote: "To win 100 victories in 100 battles is not the highest skill. To subdue the enemy without fighting is the highest skill.",
+    author: "Zhuge Liang"
+  },
+  {
+    quote: "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.",
+    author: "Cao Cao"
   },
 ];
 

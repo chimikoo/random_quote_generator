@@ -1,3 +1,4 @@
+// Array of quotes
 const quotes = [
   {
     quote: "The only way to do great work is to love what you do.",
@@ -26,14 +27,16 @@ const quotes = [
   {
     quote: "Don't jump off an airplane. It's bad for you.",
     author: "Pelle",
-  }
+  },
 ];
 
+// Get a random quote
 function getRandomQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   return quotes[randomIndex];
 }
 
+// Display the random quote
 const randomQuote = getRandomQuote();
 
 const quoteContainer = document.querySelector("#quote-container");
